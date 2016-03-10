@@ -1,0 +1,36 @@
+//
+//  PalacePrefix.pch
+//  PalaceByObjectC
+//
+//  Created by 陈梦楼 on 16/3/9.
+//  Copyright © 2016年 chenmenglou. All rights reserved.
+//
+
+#ifndef PalacePrefix_pch
+#define PalacePrefix_pch
+
+//常规属性与方法
+#define RGBColor(r, g, b)             [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+#define RGBAlphaColor(r, g, b, a)     [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
+
+#define kDEVICEWIDTH  [UIScreen mainScreen].bounds.size.width
+#define kDEVICEHEIGHT  [UIScreen mainScreen].bounds.size.height
+#define kScreen_Frame  (CGRectMake(0, 0 , kDEVICEWIDTH,kDEVICEHEIGHT))
+#define iPhone4  [UIScreen mainScreen].bounds.size.height == 480
+#define iPhone5  [UIScreen mainScreen].bounds.size.height == 568
+#define iPhone6  [UIScreen mainScreen].bounds.size.height == 667
+#define iPhone6Plus  [UIScreen mainScreen].bounds.size.height == 736
+#define iOSVersion(version) ([[UIDevice currentDevice].systemVersion doubleValue] >= version)
+
+//日志打印开宏，默认是打开的
+#ifdef _DEBUG
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#else
+#define DebugLog(...)
+#endif
+
+//默认倒入头文件
+#import "Masonry.h"
+#import "UIViewController+Palace.h"
+
+#endif /* PalacePrefix_pch */
