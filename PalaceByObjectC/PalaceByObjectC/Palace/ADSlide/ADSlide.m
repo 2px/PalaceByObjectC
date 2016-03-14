@@ -14,8 +14,20 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self setTitle:@"ADSlide"];
-    UIView *myADSlideView=[[ADSlideComponent alloc] initWithObj:self];
+    self.view.backgroundColor=[UIColor whiteColor];
+    __weak  ADSlide*__self=self;
+    UIView *myADSlideView=[[ADSlideComponent alloc] initWithObj:self andImageIs:@"u=357512142,3071391448&fm=21&gp=0.jpg" andCallbackIs:^{
+        [__self.navigationController popViewControllerAnimated:YES];
+    }];
     [self.view addSubview:myADSlideView];
+}
+
+-(void)dealloc{
+    NSLog(@"dealloc");
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
 }
 
 @end

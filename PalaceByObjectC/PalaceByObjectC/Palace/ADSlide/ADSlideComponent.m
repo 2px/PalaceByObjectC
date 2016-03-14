@@ -11,57 +11,74 @@
 
 @interface ADSlideComponent ()
 {
-    id myObj;
+    __weak id myObj;
+    ADSlideComponentBlcok callbackBlock;
 }
 @end
 
 @implementation ADSlideComponent
 
-- (instancetype)initWithObj:(id)obj
+- (instancetype)initWithObj:(id)obj andImageIs:(NSString *)img andCallbackIs:(ADSlideComponentBlcok)b
 {
     self = [super init];
     if (self) {
         myObj=obj;
-        [self createADSlideIn:obj];
+        [self createADSlideIn:obj andImgIs:img];
+        callbackBlock=b;
     }
     return self;
 }
 
--(void)createADSlideIn:(id)obj{
+-(void)createADSlideIn:(id)obj andImgIs:(NSString*)img{
     UIView *boxView=[[UIView alloc] init];
     boxView.frame=CGRectMake(0, 0, kDEVICEWIDTH, kDEVICEHEIGHT);
     boxView.backgroundColor=[UIColor clearColor];
     
     UIView *bgColor=[[UIView alloc] init];
     bgColor.frame=CGRectMake(0, 0, kDEVICEWIDTH, kDEVICEHEIGHT);
-    bgColor.backgroundColor=RGBAlphaColor(0, 0, 0, 0.3);
+    bgColor.backgroundColor=RGBAlphaColor(0, 0, 0, 0.71);
     bgColor.userInteractionEnabled=YES;
     UITapGestureRecognizer *gest=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
     [bgColor addGestureRecognizer:gest];
     [boxView addSubview:bgColor];
     
     UIView *containView=[[UIView alloc] init];
-    containView.backgroundColor=[UIColor whiteColor];
+    containView.backgroundColor=[UIColor clearColor];
+    containView.layer.cornerRadius=3;
     [boxView addSubview:containView];
     [containView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(boxView);
+        make.left.equalTo(boxView).with.offset(12);
         make.centerY.equalTo(boxView);
-        make.height.equalTo(@(kDEVICEHEIGHT/2));
-        make.width.equalTo(@(kDEVICEWIDTH/5*4));
+        make.top.equalTo(boxView).with.offset(119);
+        make.bottom.equalTo(boxView).with.offset(-130);
+        make.width.equalTo(@(kDEVICEWIDTH-24));
     }];
-    containView.layer.borderWidth=1;
-    containView.layer.borderColor=[UIColor blackColor].CGColor;
+    containView.layer.borderWidth=2;
+    containView.layer.borderColor=[UIColor whiteColor].CGColor;
     
-    UIButton *x=[UIButton buttonWithType:UIButtonTypeCustom];
-    x.backgroundColor=[UIColor redColor];
-    [x addTarget:self action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
-    [boxView addSubview:x];
-    [x setTitle:@"x" forState:UIControlStateNormal];
-    [x mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIImage *x=[UIImage imageNamed:@"tFHomeBombBoxClose"];
+    UIImageView *xView=[[UIImageView alloc] initWithImage:x];
+    [boxView addSubview:xView];
+    [xView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(containView.mas_top);
-        make.left.equalTo(containView.mas_right);
-        make.width.equalTo(@20);
-        make.height.equalTo(@20);
+        make.left.equalTo(containView.mas_right).with.offset(-40);
+        make.width.equalTo(@30);
+        make.height.equalTo(@90);
+    }];
+    
+    UIImage *_img=[UIImage imageNamed:img];
+    UIImageView *_imgView=[[UIImageView alloc] initWithImage:_img];
+    _imgView.userInteractionEnabled=YES;
+    UITapGestureRecognizer *_imgViewgest=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mycallback)];
+    [_imgView addGestureRecognizer:_imgViewgest];
+    
+    [containView addSubview:_imgView];
+    [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(containView);
+        make.height.equalTo(containView);
+        make.left.equalTo(containView);
+        make.top.equalTo(containView);
+
     }];
     
     self.frame=CGRectMake(0, 0, kDEVICEWIDTH, kDEVICEHEIGHT);
@@ -79,6 +96,11 @@
     self.alpha=0;
     //   myADSlideView.frame=CGRectMake(0, kDEVICEHEIGHT, kDEVICEWIDTH, kDEVICEHEIGHT);
     [UIView commitAnimations];
+}
+
+-(void)mycallback{
+    [self hide];
+    callbackBlock();
 }
 
 @end

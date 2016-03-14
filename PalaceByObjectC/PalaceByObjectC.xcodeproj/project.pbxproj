@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		550B5DAB1C9108820056516A /* ADSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B5DAA1C9108820056516A /* ADSlide.m */; };
 		550B5DAE1C9117920056516A /* ADSlideComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B5DAD1C9117920056516A /* ADSlideComponent.m */; };
+		550EE7741C92BFA000F53D91 /* tFHomeBombBoxClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 550EE7711C92BFA000F53D91 /* tFHomeBombBoxClose.png */; };
+		550EE7751C92BFA000F53D91 /* tFHomeBombBoxClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 550EE7721C92BFA000F53D91 /* tFHomeBombBoxClose@2x.png */; };
+		550EE7761C92BFA000F53D91 /* tFHomeBombBoxClose@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 550EE7731C92BFA000F53D91 /* tFHomeBombBoxClose@3x.png */; };
 		551BFDAF1C90194700641C64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDAE1C90194700641C64 /* main.m */; };
 		551BFDB21C90194700641C64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDB11C90194700641C64 /* AppDelegate.m */; };
 		551BFDB81C90194700641C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551BFDB61C90194700641C64 /* Main.storyboard */; };
@@ -26,6 +29,7 @@
 		551BFDEC1C901BB100641C64 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDE01C901BB100641C64 /* View+MASAdditions.m */; };
 		551BFDED1C901BB100641C64 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDE31C901BB100641C64 /* ViewController+MASAdditions.m */; };
 		551BFDF31C90272400641C64 /* UIViewController+Palace.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDF21C90272400641C64 /* UIViewController+Palace.m */; };
+		55F25D791C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F25D781C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,9 @@
 		550B5DAA1C9108820056516A /* ADSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSlide.m; sourceTree = "<group>"; };
 		550B5DAC1C9117920056516A /* ADSlideComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSlideComponent.h; sourceTree = "<group>"; };
 		550B5DAD1C9117920056516A /* ADSlideComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSlideComponent.m; sourceTree = "<group>"; };
+		550EE7711C92BFA000F53D91 /* tFHomeBombBoxClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tFHomeBombBoxClose.png; sourceTree = "<group>"; };
+		550EE7721C92BFA000F53D91 /* tFHomeBombBoxClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tFHomeBombBoxClose@2x.png"; sourceTree = "<group>"; };
+		550EE7731C92BFA000F53D91 /* tFHomeBombBoxClose@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tFHomeBombBoxClose@3x.png"; sourceTree = "<group>"; };
 		551BFDAA1C90194700641C64 /* PalaceByObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalaceByObjectC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551BFDAE1C90194700641C64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		551BFDB01C90194700641C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		551BFDE31C901BB100641C64 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		551BFDF11C90272400641C64 /* UIViewController+Palace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Palace.h"; sourceTree = "<group>"; };
 		551BFDF21C90272400641C64 /* UIViewController+Palace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Palace.m"; sourceTree = "<group>"; };
+		55F25D781C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=357512142,3071391448&fm=21&gp=0.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,17 @@
 			path = ADSlide;
 			sourceTree = "<group>";
 		};
+		550EE7701C92BFA000F53D91 /* PalaceRes */ = {
+			isa = PBXGroup;
+			children = (
+				55F25D781C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg */,
+				550EE7711C92BFA000F53D91 /* tFHomeBombBoxClose.png */,
+				550EE7721C92BFA000F53D91 /* tFHomeBombBoxClose@2x.png */,
+				550EE7731C92BFA000F53D91 /* tFHomeBombBoxClose@3x.png */,
+			);
+			path = PalaceRes;
+			sourceTree = "<group>";
+		};
 		551BFDA11C90194700641C64 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +133,7 @@
 		551BFDAC1C90194700641C64 /* PalaceByObjectC */ = {
 			isa = PBXGroup;
 			children = (
+				550EE7701C92BFA000F53D91 /* PalaceRes */,
 				551BFDF01C90269500641C64 /* PalaceCategory */,
 				551BFDC91C901B6900641C64 /* PalaceFramework */,
 				551BFDC41C9019FC00641C64 /* Palace */,
@@ -140,6 +160,7 @@
 		551BFDC41C9019FC00641C64 /* Palace */ = {
 			isa = PBXGroup;
 			children = (
+				55FE92861C91CCBB0042857F /* SearchBar */,
 				550B5DA81C91083A0056516A /* ADSlide */,
 				551BFDC51C901A5E00641C64 /* PalaceRouteController.h */,
 				551BFDC61C901A5E00641C64 /* PalaceRouteController.m */,
@@ -194,6 +215,13 @@
 				551BFDF21C90272400641C64 /* UIViewController+Palace.m */,
 			);
 			path = PalaceCategory;
+			sourceTree = "<group>";
+		};
+		55FE92861C91CCBB0042857F /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +283,11 @@
 			files = (
 				551BFDBD1C90194700641C64 /* LaunchScreen.storyboard in Resources */,
 				551BFDBA1C90194700641C64 /* Assets.xcassets in Resources */,
+				55F25D791C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg in Resources */,
 				551BFDB81C90194700641C64 /* Main.storyboard in Resources */,
+				550EE7761C92BFA000F53D91 /* tFHomeBombBoxClose@3x.png in Resources */,
+				550EE7741C92BFA000F53D91 /* tFHomeBombBoxClose.png in Resources */,
+				550EE7751C92BFA000F53D91 /* tFHomeBombBoxClose@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

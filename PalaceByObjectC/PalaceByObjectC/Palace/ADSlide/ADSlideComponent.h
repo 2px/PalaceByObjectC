@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void(^ADSlideComponentBlcok)();
 
 @interface ADSlideComponent : UIView
 
-- (instancetype)initWithObj:(id)obj;
+- (instancetype)initWithObj:(id)obj
+                 andImageIs:(NSString*)img
+              andCallbackIs:(ADSlideComponentBlcok)b;
 
 @end
