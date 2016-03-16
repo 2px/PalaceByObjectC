@@ -10,6 +10,5 @@
 
 @interface UIViewController (Palace)
 
--(void)setTitle:(NSString *)title;
 
 @end

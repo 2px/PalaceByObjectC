@@ -10,9 +10,5 @@
 
 @implementation UIViewController (Palace)
 
--(void)setTitle:(NSString *)title{
-    self.view.backgroundColor=[UIColor whiteColor];
-    self.navigationItem.title=title;
-}
 
 @end

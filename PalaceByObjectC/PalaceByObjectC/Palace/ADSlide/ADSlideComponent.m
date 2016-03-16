@@ -35,7 +35,7 @@
     boxView.backgroundColor=[UIColor clearColor];
     
     UIView *bgColor=[[UIView alloc] init];
-    bgColor.frame=CGRectMake(0, 0, kDEVICEWIDTH, kDEVICEHEIGHT);
+    bgColor.frame=CGRectMake(0,0, kDEVICEWIDTH, kDEVICEHEIGHT);
     bgColor.backgroundColor=RGBAlphaColor(0, 0, 0, 0.71);
     bgColor.userInteractionEnabled=YES;
     UITapGestureRecognizer *gest=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];

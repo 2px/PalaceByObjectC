@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PalaceRouteController : UIViewController
+@interface PalaceRouteController : BaseView
 
 @end

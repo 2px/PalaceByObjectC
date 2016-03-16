@@ -13,8 +13,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self setTitle:@"ADSlide"];
-    self.view.backgroundColor=[UIColor whiteColor];
+    [self withBackbuttonAndSetNavTitle:@"ADSlide"];
     __weak  ADSlide*__self=self;
     UIView *myADSlideView=[[ADSlideComponent alloc] initWithObj:self andImageIs:@"u=357512142,3071391448&fm=21&gp=0.jpg" andCallbackIs:^{
         [__self.navigationController popViewControllerAnimated:YES];

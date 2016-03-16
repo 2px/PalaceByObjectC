@@ -32,5 +32,6 @@
 //默认倒入头文件
 #import "Masonry.h"
 #import "UIViewController+Palace.h"
+#import "BaseView.h"
 
 #endif /* PalacePrefix_pch */

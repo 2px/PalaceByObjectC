@@ -29,6 +29,7 @@
 		551BFDEC1C901BB100641C64 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDE01C901BB100641C64 /* View+MASAdditions.m */; };
 		551BFDED1C901BB100641C64 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDE31C901BB100641C64 /* ViewController+MASAdditions.m */; };
 		551BFDF31C90272400641C64 /* UIViewController+Palace.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BFDF21C90272400641C64 /* UIViewController+Palace.m */; };
+		557ED3B01C9997EF00A335BC /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 557ED3AF1C9997EF00A335BC /* BaseView.m */; };
 		55F25D791C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F25D781C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		551BFDE31C901BB100641C64 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		551BFDF11C90272400641C64 /* UIViewController+Palace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Palace.h"; sourceTree = "<group>"; };
 		551BFDF21C90272400641C64 /* UIViewController+Palace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Palace.m"; sourceTree = "<group>"; };
+		557ED3AE1C9997EF00A335BC /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		557ED3AF1C9997EF00A335BC /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		55F25D781C968F2100BA9DDF /* u=357512142,3071391448&fm=21&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=357512142,3071391448&fm=21&gp=0.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,8 @@
 				550B5DA81C91083A0056516A /* ADSlide */,
 				551BFDC51C901A5E00641C64 /* PalaceRouteController.h */,
 				551BFDC61C901A5E00641C64 /* PalaceRouteController.m */,
+				557ED3AE1C9997EF00A335BC /* BaseView.h */,
+				557ED3AF1C9997EF00A335BC /* BaseView.m */,
 			);
 			path = Palace;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557ED3B01C9997EF00A335BC /* BaseView.m in Sources */,
 				551BFDEB1C901BB100641C64 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				551BFDE91C901BB100641C64 /* MASViewConstraint.m in Sources */,
 				551BFDE41C901BB100641C64 /* MASCompositeConstraint.m in Sources */,

@@ -21,7 +21,6 @@
     PalaceRouteController *_tempPalaceRouteController=[[PalaceRouteController alloc] init];
     UINavigationController *na=[[UINavigationController alloc] initWithRootViewController:_tempPalaceRouteController];
     _window.backgroundColor=[UIColor whiteColor];
-    na.navigationBarHidden=YES;
     _window.rootViewController=na;
     [_window makeKeyAndVisible];
 }

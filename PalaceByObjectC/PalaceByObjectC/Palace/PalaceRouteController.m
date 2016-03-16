@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"PalaceRouteController"];
+    [self setNavTitle:@"PalaceRouteController"];
     [self initPalaceRouteControllerData];
     [self initPalaceRouteControllerTable];
 }
@@ -44,10 +44,10 @@
     palaceRouteControllerTable.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self.view addSubview:palaceRouteControllerTable];
     [palaceRouteControllerTable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view);
+        make.top.equalTo(self.view).with.offset(64);
         make.left.equalTo(self.view);
         make.width.equalTo(self.view);
-        make.height.equalTo(self.view);
+        make.height.equalTo(@(kDEVICEHEIGHT-64));
     }];
 }
 

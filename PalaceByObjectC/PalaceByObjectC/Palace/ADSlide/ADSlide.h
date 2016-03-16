@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADSlide : UIViewController
+@interface ADSlide : BaseView
 
 @end
